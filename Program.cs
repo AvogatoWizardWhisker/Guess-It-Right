@@ -14,7 +14,7 @@ while (guess != num)
 
         if (guess > num)
         {
-            Console.WriteLine("Hmmmmm, too High. Guess again");
+            Console.WriteLine("Hmmmmm, too high. Guess again");
         }
 
         else
@@ -25,8 +25,9 @@ while (guess != num)
     catch 
     {
         Console.WriteLine("Guess must be a number");
-        i++;
+        i--;
     }
-    Console.WriteLine($"Congrats, it took you {i} attempts");
-    Console.ReadLine();
+    i++;
 }
+Console.WriteLine($"Congrats, it took you {i} attempts");
+Console.ReadLine();
