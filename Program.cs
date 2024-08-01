@@ -2,7 +2,9 @@
 int guess = 0;
 string welcomeMessage = "Welcome to Guess It Right. Guess a number between 1 and 500";
 int num = random.Next(1, 501);
+
 Console.WriteLine(welcomeMessage);
+Console.WriteLine("-----------------------------------------------------------");
 
 int i = 0;
 
