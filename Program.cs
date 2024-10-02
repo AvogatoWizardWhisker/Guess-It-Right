@@ -1,7 +1,7 @@
 ﻿Random random = new Random();
 int guess = 0;
-string welcomeMessage = "Welcome to Guess It Right. Guess a number between 1 and 500";
-int num = random.Next(1, 100);
+string welcomeMessage = "Welcome to Guess It Right. Guess a number between 1 and 20";
+int num = random.Next(1, 20);
 
 Console.WriteLine(welcomeMessage);
 Console.WriteLine("-----------------------------------------------------------");
@@ -16,7 +16,12 @@ while (guess != num)
 
         if (guess > num)
         {
-            Console.WriteLine("Hmmmmm, too high. Guess again");
+            Console.WriteLine("Too high. Guess again");
+        }
+
+        else if (guess == num)
+        {
+            Console.WriteLine("You guessed the number");
         }
 
         else
